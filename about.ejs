@@ -1,0 +1,21 @@
+<%- include("header")%>
+    <div class="row mb-2">
+        <div class="col-6">
+            <h4><%= title %></h4>
+  
+<table class="table">
+    <% items.forEach(item => {%>
+    <tr>
+        <td> <%= item.Name %> </td>
+        <td> <%= item.Age %> </td>
+        <td> <%= item.City %> </td>
+    </tr>
+    <% }) %>
+</table>
+        </div>
+        <div class="col-6">
+            <img src="images/a.jpeg" alt="picture"height="250px"width="250px">
+        </div>
+    </div>
+   
+   <%- include("footer")%>
